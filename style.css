@@ -7,12 +7,12 @@
    --light-grey: #e0dede;
 
    --menu-height:50px;
-
 }
 
 *{
    box-sizing: border-box;
 }
+
 html, body {
    margin: 0;
    background: var(--bg-dark);
@@ -34,15 +34,15 @@ h2 {
 p {
    color: var(--light-grey);
 }
+
 button {
    background: var(--purple);
    border: 0;
    border-radius: 16px;
-   padding: 8px 20px;
-   color: white;
+   padding: 8px 35px;
    font-weight: bold;
    font-size: 18px;
-
+   margin: 30px;
 }
 
 header {
@@ -68,7 +68,7 @@ header .container button {
 nav {
    display: flex;
    align-items: center;
-   justify-content: space-evenly;
+   justify-content: space-between;
    height: var(--menu-height);
    background: var(--bg-dark);
    padding: 0 100px;
@@ -76,13 +76,71 @@ nav {
    top: 0;
 }
 
+nav ul {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
 nav ul a {
    font-size: 24px;
    color: var(--green);
    text-decoration: none;
-   margin: 0 30px;
 }
 
 section {
    height: 1500px;
+}
+
+/* RESPONSIVIDADE*/
+
+/* small desktop*/
+@media  (max-width:1000px) {
+   header .container {
+      width: 100%;
+   }
+
+   nav ul a {
+      font-size: 18px;
+   }
+   
+   nav {
+      padding: 0 40px;
+   }
+}
+
+/*tablet*/
+@media (max-width:767px) {
+   header .container {
+      width: 100%;
+   }
+
+   nav {
+      padding: 0 30px;
+   }
+
+   nav ul {
+      padding: 0;
+   }
+
+   nav ul a {
+      font-size: 16px;
+   }
+}
+
+/*celular*/
+@media (max-width:480px) {
+   header .container {
+      padding: 0 40px;
+   }
+
+   nav {
+      padding: 0 15px;
+   }
+
+   nav ul a {
+      font-size: 14px;
+      margin: 0 auto;
+   }
+   
 }
