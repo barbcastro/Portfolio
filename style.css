@@ -38,7 +38,7 @@ p {
 button {
    background: var(--purple);
    border: 0;
-   border-radius: 16px;
+   border-radius: 15px;
    padding: 8px 35px;
    font-weight: bold;
    font-size: 18px;
@@ -86,6 +86,9 @@ nav ul a {
    font-size: 24px;
    color: var(--green);
    text-decoration: none;
+}
+nav ul a svg {
+   display: none;
 }
 
 section {
@@ -135,12 +138,21 @@ section {
    }
 
    nav {
+      position: fixed;
+      width: 100%;
+      bottom: 0;
       padding: 0 15px;
+      top: unset;
+      
+
    }
 
    nav ul a {
-      font-size: 14px;
-      margin: 0 auto;
+      font-size: 12px;
+      margin: 0 auto 10px;
+   }
+   nav ul a svg {
+      display: block;
    }
    
 }
