@@ -13,6 +13,10 @@
    box-sizing: border-box;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 html, body {
    margin: 0;
    background: var(--bg-dark);
@@ -298,7 +302,6 @@ p {
    width: fit-content;
    margin: 0 auto 40px;
    background: -webkit-linear-gradient(#15CDCB, #5280E2);   
-   -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 
