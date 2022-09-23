@@ -72,6 +72,35 @@ button {
    color: var(--green);
 }
 
+.risk {
+   border-right: 2px solid rgba(225, 255, 255, .75);
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+.typing-animation {
+   animation: blinkCursor 30ms steps(40) infinite normal, typing 4s steps(40) normal both;
+}
+
+
+@keyframes typing {
+   from {
+      width: 0;
+   }
+   to {
+      width: 10em;
+   }
+}
+
+@keyframes blinkCursor {
+   from {
+      border-right-color: rgba(225, 255, 255, .75);
+   }
+   to {
+      border-right-color: transparent;
+   }
+}
+
 header {
    height: calc(100vh - var (--menu-height));
    display: flex;
@@ -461,4 +490,8 @@ p {
       padding: 0 15px;
   }
 
+  .risk {
+   white-space: normal;
+   overflow: hidden;
+  }
 }
